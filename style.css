@@ -281,7 +281,7 @@ form {
 }
 
 [type="checkbox"]:checked+label {
-    opacity: 0.3;
+    opacity: 0.1;
 }
 
 .task label::after {

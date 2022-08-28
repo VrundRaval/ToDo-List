@@ -46,6 +46,24 @@ deleteListButton.addEventListener('click', e => {
     saveAndRender()
 })
 
+var map = {}; // You could also use an array
+onkeydown = onkeyup = function (e) {
+    e = e || event; // to deal with IE
+    map[e.keyCode] = e.type == 'keydown';
+    /* insert conditional here */
+
+    if (map[17] && map[90]) { // CTRL+Z
+        const selectedList = lists.find(list => list.id === selectedListId)
+        selectedList.tasks = selectedList.tasks.filter(task => !task.complete)
+        saveAndRender()
+    }
+    else if (map[18] && map[90]) { // ALT+Z
+        lists = lists.filter(list => list.id !== selectedListId)
+        selectedListId = null
+        saveAndRender()
+    }
+}
+
 newListForm.addEventListener('submit', e => {
     e.preventDefault()
     const listName = newListInput.value

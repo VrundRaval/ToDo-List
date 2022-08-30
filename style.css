@@ -306,41 +306,49 @@ form {
 } */
 
 .delete-stuff {
-    background-color: white;
+    background-color: var(--clr-dark);
     display: flex;
     justify-content: space-evenly;
-    position: fixed;
-    width: 100vw;
-    height: 50px;
-    /* transform: rotate(-90deg); */
-    /* transform-origin: right; */
-    /* top: calc(-10px + 100vh); */
-    /* right: 15px; */
+    position: absolute;
+    width: 100vh;
+    transform: rotate(-90deg);
+    transform-origin: right;
+    top: -10px;
+    right: 15px;
 }
 
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px) {
 
-    body{
+    body {
         display: flex;
         flex-direction: column;
     }
 
-  
+
     .all-tasks {
         margin-top: 50px;
         min-width: 80vw;
-
-    
     }
 
-    .todo-list{
+    .todo-list {
         margin-top: 50px;
         width: 100%;
     }
 
+    .delete-stuff {
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100vw;
+        height: 50px;
+        transform: rotate(0deg);
+        transform-origin: right;
+        top: 0;
+        right: 0;
 
+    }
 
-    
 }

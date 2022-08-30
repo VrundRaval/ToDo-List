@@ -319,7 +319,23 @@ form {
 @media only screen and (max-width: 900px){
 
     body{
-        display: none;
+        display: flex;
+        flex-direction: column;
     }
+
+  
+    .all-tasks {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .todo-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
     
 }

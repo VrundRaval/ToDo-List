@@ -143,6 +143,9 @@ form {
     color: var(--clr-warning);
 }
 
+#btn-mobile{
+    display: none;
+}
 
 .new {
     background: transparent;
@@ -303,16 +306,18 @@ form {
 } */
 
 .delete-stuff {
-    background-color: var(--clr-dark);
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
-    width: 100vh;
-    transform: rotate(-90deg);
-    transform-origin: right;
-    top: -10px;
-    right: 15px;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    /* transform: rotate(-90deg); */
+    /* transform-origin: right; */
+    /* top: calc(-10px + 100vh); */
+    /* right: 15px; */
 }
+
 
 
 @media only screen and (max-width: 900px){

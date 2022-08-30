@@ -378,8 +378,8 @@ form {
         display: flex;
         justify-content: space-evenly;
         position: fixed;
-        width: 90vh;
-        height: 40px;
+        width: 70vh;
+        height: 30px;
         transform: rotate(-90deg);
         transform-origin: right;
         top: 0px;

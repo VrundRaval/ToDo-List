@@ -315,7 +315,6 @@ form {
 }
 
 
-
 @media only screen and (max-width: 900px){
 
     body{
@@ -325,14 +324,15 @@ form {
 
   
     .all-tasks {
-        display: flex;
-        flex-direction: column;
+        margin-top: 50px;
+        min-width: 80vw;
+
     
     }
 
     .todo-list{
-        display: flex;
-        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
     }
 
 
